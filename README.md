@@ -1,2 +1,2 @@
-# Rock-Paper-Scissors- Games
-Games of Rock Paper Scissors, Ranging from different levels of difficulty and creativity
+# Rock-Paper-Scissor- Games
+Games of Rock Paper Scissor, Ranging from different levels of difficulty and creativity
