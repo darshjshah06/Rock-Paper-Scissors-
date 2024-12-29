@@ -1,0 +1,43 @@
+
+computer_score = 0
+user_score = 0
+
+while computer_score != 3 and user_score != 3:
+    import random
+
+    print('Welcome to Rock-Paper-Scissors!, Best of 5 Rounds')
+
+    userinput = input('Pick Rock, Paper, Scissor   ').lower()
+    while userinput not in ['rock', 'paoer', 'scissor']:
+        print('Invalid input')
+        userinput = input('Pick Rock, Paper, Scissor').lower()
+
+    compinput = random.choice(['rock', 'paper', 'scissor'])
+
+    print(f'You choose: {userinput}')
+    print(f'Computer choose: {compinput}')
+
+    if compinput == userinput:
+        print("It's a Tie!")
+        
+    elif (userinput == 'rock' and compinput == 'scissor') or\
+         (userinput == 'scissor' and compinput == 'paper') or\
+         (userinput == 'paper' and compinput == 'rock'):
+
+        print()
+        print('You Win the Round!')
+        user_score += 1
+
+    else:
+        print()
+        print('You Lose the Round')
+        computer_score += 1
+
+    print(f'Your Score {user_score}| Computer Score {computer_score}')
+
+    if computer_score == 3:
+        print('You LOST the Game, Sorry')
+
+    if user_score == 3:
+        print('You WON the Game, Hooray')
+
